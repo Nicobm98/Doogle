@@ -1,0 +1,156 @@
+.logo {
+    width: 16em;
+    margin-left: .9em;
+}
+
+.nav {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2em;
+    background: rgb(236, 195, 208);
+    background: linear-gradient(180deg, rgba(236, 195, 208, 1) 85%, rgba(205, 205, 205, 1) 100%, rgba(0, 0, 14, 0.6110819327731092) 100%);
+    width: 100%;
+
+}
+
+.home {
+    width: 4em;
+}
+
+.weightimage {
+    width: 3em;
+    margin: .3em 0 .3em .3em
+    
+}
+
+.weightcontainer:hover {
+    cursor: pointer
+}
+
+.arrow {
+    width: 1.4vw;
+    height: 5.6vh
+}
+
+.sorts {
+    position: relative;
+    left: 20em;
+    padding: 0 0 0 0;
+}
+
+.sorts p {
+    cursor: default;
+    position: relative;
+    right: .3em;
+    font-size: 1.25em;
+    margin: 5px;
+}
+
+.filters p {
+    cursor: default;
+    position: relative;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+.filters {
+    display: table-column;
+    position: relative;
+    left: 19em;
+    padding: 0 0 0 0;
+    
+}
+
+.temps {
+    position: relative;
+    bottom: 0.9em;
+    border: 1px solid black;
+    background-color: #cdcdcd62;
+    border-radius: 3px;
+    transition: border .1s;
+    
+}
+
+.origin {
+    position: relative;
+    bottom: 0.4em;
+    border: 1px solid black;
+    background-color: #cdcdcd62;
+    border-radius: 3px;
+    transition: border .1s;
+}
+
+.origin select{
+    width: 11.5vw;
+}
+
+.temps select, .origin select {
+    background-color: #ffe6f38e;
+    border: none;
+    font-size: 17px;
+    transition: background-color .1s ease;
+}
+.temps select:hover, .origin select:hover{
+    cursor:pointer;
+    background-color: #ecc3d8;
+}
+
+.temps:hover, .origin:hover{
+    border: 2px solid #ad3071c5
+}
+
+.createbutton{
+    display: flex;
+    position: relative;
+    left: 17.4em;
+    top: .9em;    
+}
+
+.createbutton button{
+    font-size: 17px;
+    height: 8.9vh;
+    background-color: #ffe6f38e;
+    border: 1px solid black;
+    transition: transform .1s ease, border .1s ease;
+    border-radius: 3px;
+}
+
+.createbutton button:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    background-color: #ecc3d8;
+    border: 3px solid #ad3071c5
+}
+
+.weightimage{
+    
+    transition: transform .1s ease-in;
+}
+
+.weightimage:hover{
+    transform: scale(1.1);
+} 
+
+.search{
+    display: inline-block;
+    justify-content: center;
+}
+
+.navcreate {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2em;
+    background: rgb(236, 195, 208);
+    background: linear-gradient(180deg, rgba(236, 195, 208, 1) 85%, rgba(205, 205, 205, 1) 100%, rgba(0, 0, 14, 0.6110819327731092) 100%);
+    width: 100%;
+
+}
+
+.search p {
+    position: absolute;
+    left: 23.4em;
+    display: flex;
+    font-size: 25px;
+    align-items: flex-end;
+    justify-content: center;
+}

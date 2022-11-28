@@ -1,0 +1,27 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+.link {
+    text-decoration: none;
+    color: #00000e;
+}
+.bg{  
+    background-image: url('../../images/back3.png');
+    
+}
+
+
+.content {
+
+    position: relative;
+}
+
+.pagination{
+    padding-bottom: 2em;
+}
+

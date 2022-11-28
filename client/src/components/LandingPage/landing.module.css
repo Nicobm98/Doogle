@@ -1,0 +1,95 @@
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    
+    margin-top: 1em;
+    width: 60em;
+    margin-right: 5.4em;
+}
+
+.title{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 1.3em;
+}
+
+.linkbut button {
+    font-family: sans-serif;
+    animation: bouncy 4s infinite linear;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #f376b7;
+    border-radius: 5px;
+    height: 10vh;
+    font-size: 20px;
+    transition: all .2s;
+    padding: 0 .4em 0 .4em
+}
+
+.containerland{
+    background-image: url('../../images/back3.png');
+    height: 100vh;
+    
+}
+
+.linktree{
+    background-image: none;
+    height: 5vh;
+}
+
+
+
+.imagenlinktree{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 23em;
+}
+
+.linkbut button:hover{
+    background-color: #f376b7;
+    cursor: pointer;
+    color: white;
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
+.buttons{
+display: flex;
+justify-content: center;
+margin-left: 34em;
+}

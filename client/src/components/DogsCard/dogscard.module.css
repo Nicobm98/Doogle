@@ -1,0 +1,29 @@
+.container{
+    border-radius: 15px 15px 0 0;
+    width: 315px;
+    height: 70vh;
+    background-color: #ffdaeda4;
+    margin-bottom: 2.3em;
+    transition: transform .1s linear, top .5s ease, box-shadow .3s ease, background-color .3s ease;
+    
+}
+.container:hover{
+background-color: #e9b6d0;
+box-shadow: 8px 6px 5px 0px rgba(20,20,20,0.76);
+-webkit-box-shadow: 8px 6px 5px 0px rgba(20,20,20,0.76);
+-moz-box-shadow: 8px 6px 5px 0px rgba(20,20,20,0.76);
+transform: scale(1.04);
+}
+
+.dogimage{
+    width: 315px;
+    height: 40vh;
+    border-radius: 15px 15px 0 0;
+    transition: 0s all ease;
+}
+
+.data p, .data h3{
+    text-align: start;
+    padding: .7em 0 0 .5em;
+    margin: .5em 0 0 0
+}

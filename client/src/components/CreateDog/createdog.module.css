@@ -1,0 +1,178 @@
+.container{
+    position: absolute;
+    background-image: url('../../images/back3.png');
+    width: 100%;
+    height: max-content;
+}
+
+.formtitle{
+    margin: .6em;
+    margin-top: -1.7em;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.form{
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    max-height: 100%;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.formcontent{
+    display: inline-grid;
+    border-radius: 15px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100%;    
+    text-align: start;
+    background-color: #e9b6d0b7;
+}
+
+.nameinput, .minweight,
+.maxweight,
+.minheight,
+.maxheight,
+.minls,
+.maxls,
+.imageinput,
+.formtemps{
+    margin: .4em;
+    margin-right: .5em;
+}
+
+ .nameinput, .imageinput{
+    margin-right: .78em;
+} 
+
+.heights, .weights, .ls{
+    display: inline-block;
+    margin: .3em;
+    margin-left: 0;
+}
+
+.formbutton{
+    display: grid;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.formtemps{
+    display: inline-flex;
+    width: 43.1em; 
+    justify-content: space-between;
+    
+}
+
+.form input{
+    width: 100%;
+    border-color:#cccccc; 
+    font-size:16px; 
+    border-width:2px; 
+    border-radius:6px; 
+    border-style:outset; 
+    text-shadow:0px 0px 0px rgba(42,42,42,.75); 
+    margin-right:1em;
+    border-width:.3em;
+}
+
+.form span{
+    color: rgb(175, 0, 0);
+    text-shadow:  1px 1px #000000
+}
+
+.tempsinput select{
+    border: none;
+    display: inline-block;
+	width: 7.5em;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 7em; 
+	background: #f0f0f0;
+	color: #292828;
+	font-size: 1.3em;
+    border-radius: 12px;
+    position: relative;
+}
+
+.tempsinput{
+    display: grid;
+    transition: all .1s;
+}
+
+.deletetemps{
+    display: inline-flex;
+    
+}
+
+.deletetemps img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
+
+.contentdelete{
+    display: flex
+}
+
+.formbutton button{
+    font-family: sans-serif;
+    animation: bouncy 4s infinite linear;
+    height: 10vh;
+    width: 10vw;
+    font-size: 20px;
+    transition: all .2s;
+    padding: 0 .4em 0 .4em;
+    justify-content: center;
+    border-color:#cccccc;
+    border-width:2px; 
+    border-radius:6px; 
+    border-style:outset; 
+    text-shadow:0px 0px 0px rgba(42,42,42,.75); 
+}
+
+.formbutton button:hover{
+    background-color: #f376b7;
+    cursor: pointer;
+    color: white;
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
+.formlabel:before{
+    content:'*';
+    color: red;
+    margin-right: .1em;
+}

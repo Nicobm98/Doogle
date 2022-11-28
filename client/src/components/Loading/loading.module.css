@@ -1,0 +1,21 @@
+.loading_container {
+  height: 71.6vh;  
+  margin: auto;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+  
+
+  .loading_container p{
+    color: #00000e;
+    position: relative;
+    bottom:12vh;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+
+  
+
