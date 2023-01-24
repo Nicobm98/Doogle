@@ -18,14 +18,14 @@ export default function Home() {
   const allDogs = useSelector((state) => state.dogs);
   const [loading, setLoading] = useState(true);
   setTimeout(() => setLoading(false), 1900);
-console.log(allDogs)
+
   useEffect(() => {
-    if(allDogs.length === 0) {
+    
       dispatch(getAllDogs());
       dispatch(getAllTemperaments())
-    }
+    
   }, [dispatch])
-  console.log(allDogs)
+  
 
   // This is for the pagination
   const [page, setPage] = useState(1)
@@ -45,9 +45,9 @@ console.log(allDogs)
         <div className={s.cards}>
           {loading ? <Loading /> : currentDogs?.map((el) => {
             return (
-              <div className={s.dogscontainer}>
+              <div key={el.id.toString()} className={s.dogscontainer}>
                 <Link to={"/details/" + el.id} className={s.link}>
-                  <DogsCard key={el.id} name={el.name} image={el.image} temperaments={el.temperaments} weight={el.weight} />
+                  <DogsCard key={el.id.toString()} name={el.name} image={el.image} temperaments={el.temperaments} weight={el.weight} />
                 </Link>
               </div>
             )

@@ -3,7 +3,7 @@ import s from './navbar.module.css';
 import logo from '../../images/logo.png';
 import SearchInput from "../SearchInput/SearchInput";
 import { useSelector, useDispatch } from "react-redux";
-import { filterByTemperaments, filterByOrigin, alphabetSort, weightSort, sortyByLs } from "../../redux/actions/actionsIndex";
+import { filterByTemperaments, filterByOrigin, alphabetSort, weightSort } from "../../redux/actions/actionsIndex";
 import { deleteRepeatedTemps } from '../Home/handleRepeatedTemperaments'
 //import home from '../../images/home.png';
 //import homeB from '../../images/home-100.png'
@@ -66,7 +66,7 @@ export default function Navbar({ setPage }) {
               <option value='All'>All temperaments</option>
               {deleteRepeatedTemps(temperaments).map((temp) => {
                 return (
-                  <option key={temperaments.id} value={temp}>
+                  <option key={temp.toString()} value={temp}>
                     {temp}
                   </option>
                 )

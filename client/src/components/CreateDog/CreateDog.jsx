@@ -11,7 +11,6 @@ import close from '../../images/closeh.png'
 export default function CreateDog() {
   const dispatch = useDispatch()
   const history = useHistory()
-  const dogs = useSelector((state) => state.dogs)
   const allTemperaments = useSelector((state) => state.temperaments)
   const [formError, setFormError] = useState({})
   const [creationForm, setCreationForm] = useState({
